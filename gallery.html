@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery — Kristian Blog</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-layer"></div>
+<div class="blob b1"></div>
+<div class="blob b2"></div>
+<canvas id="c"></canvas>
+
+<div class="progress" id="prog"></div>
+
+<nav id="nav">
+    <a href="index.html" class="n-logo"><div class="dot"></div>Kristian Blog</a>
+    <ul class="n-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="ph reveal">
+    <div class="ph-eye">📸 My Moments</div>
+    <h1>Moments &amp; <em>Memories</em></h1>
+    <p class="ph-sub">Beberapa momen yang saya abadikan</p>
+</div>
+
+<div class="gw reveal">
+    <div class="g-meta">
+        <span class="g-count" id="gc">15 Foto</span>
+    </div>
+    <div class="g-grid" id="grid"></div>
+</div>
+
+<div class="lb" id="lb">
+    <div class="lb-inner">
+        <button class="lb-nav lb-prev" id="lbp">&#8249;</button>
+        <img src="" id="lbi" alt="">
+        <button class="lb-close" id="lbc">✕</button>
+        <button class="lb-nav lb-next" id="lbn">&#8250;</button>
+        <div class="lb-info">
+            <span id="lbcap"></span> · <span id="lbnum"></span>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="f-logo">✦ Kristian Blog</div>
+    <div class="f-copy">© 2026 Kristian Aji Suseno</div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

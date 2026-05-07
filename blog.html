@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog — Kristian Blog</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-layer"></div>
+<div class="blob b1"></div>
+<div class="blob b2"></div>
+<canvas id="c"></canvas>
+
+<div class="progress" id="prog"></div>
+
+<nav id="nav">
+    <a href="index.html" class="n-logo"><div class="dot"></div>Kristian Blog</a>
+    <div class="n-right">
+        <ul class="n-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="theme-btn" id="tbtn">🌙</button>
+    </div>
+</nav>
+
+<div class="ph reveal">
+    <div class="ph-eye">✍️ Tulisan Saya</div>
+    <h1>Video &amp; <em>Articles</em></h1>
+    <p class="ph-sub">Beberapa video dan artikel yang saya sukai</p>
+</div>
+
+<div class="bw">
+
+    <div class="v-card reveal">
+        <div class="v-head">
+            <h3>English Practice</h3>
+            <span class="vtag">VIDEO</span>
+        </div>
+        <div class="v-body">
+            <video controls>
+                <source src="vidio/vidio1.mp4" type="video/mp4">
+                Browser Anda tidak mendukung tag video HTML5.
+            </video>
+            <p class="v-cap">🎤 Video saat saya menyanyi untuk praktek bahasa Inggris</p>
+        </div>
+    </div>
+
+    <div class="a-card reveal">
+        <div class="c-head">
+            <div class="c-htitle">
+                <h3>Review Game: EA Sports FC 26 &amp; Teknologi Hypermotion</h3>
+                <div class="c-meta">
+                    <span class="tag t-game">🎮 GAME</span>
+                    <span class="tag t-read">5 min read</span>
+                </div>
+            </div>
+        </div>
+        <div class="c-body">
+            <p>Tahun 2026 menjadi momen besar bagi pecinta game olahraga dengan rilisnya <strong>EA Sports FC 26</strong>. Salah satu yang paling menarik adalah integrasi teknologi AI yang lebih mendalam, membuat pergerakan pemain di lapangan terasa jauh lebih taktis dan responsif dibandingkan seri sebelumnya.</p>
+            <p>Game ini juga menghadirkan mode khusus untuk menyambut kemeriahan turnamen sepak bola dunia tahun 2026. Bagi teman-teman yang ingin melihat detail fitur baru atau spesifikasi teknis untuk PC, silakan kunjungi link ulasan berikut:</p>
+        </div>
+        <div class="c-foot">
+            <a href="https://www.ign.com/games/ea-sports-fc-26" target="_blank" class="lnk">🎮 Baca di IGN ↗</a>
+            <a href="https://www.ea.com/games/ea-sports-fc" target="_blank" class="lnk-o">🌐 Situs Resmi EA</a>
+            <button class="like-btn" onclick="toggleLike(this)">♡ <span>Suka</span></button>
+        </div>
+    </div>
+
+    <div class="a-card reveal">
+        <div class="c-head">
+            <div class="c-htitle">
+                <h3>Tren Kecerdasan Buatan (AI) di Tahun 2026</h3>
+                <div class="c-meta">
+                    <span class="tag t-tech">⚡ TEKNOLOGI</span>
+                    <span class="tag t-read">6 min read</span>
+                </div>
+            </div>
+        </div>
+        <div class="c-body">
+            <p>Memasuki tahun 2026, teknologi Kecerdasan Buatan tidak lagi hanya sekadar <em>chatbot</em>. Saat ini, kita melihat munculnya <strong>AI Agents</strong> yang mampu mengerjakan tugas-tugas kompleks secara mandiri, mulai dari merancang arsitektur perangkat lunak hingga mengelola sistem jaringan secara otomatis.</p>
+            <p>Bagi kita mahasiswa Informatika, perkembangan ini sangat krusial. Penggunaan AI dalam <em>coding</em> telah berevolusi menjadi asisten yang mampu mendeteksi <em>bug</em> sebelum kode dijalankan. Integrasi AI dengan <em>Green Tech</em> juga membantu pemantauan emisi karbon secara real-time, sejalan dengan SDGs.</p>
+        </div>
+        <div class="c-foot">
+            <a href="https://www.theverge.com/ai-artificial-intelligence" target="_blank" class="lnk">📰 The Verge ↗</a>
+            <a href="https://techcrunch.com/category/artificial-intelligence/" target="_blank" class="lnk-o">🚀 TechCrunch</a>
+            <button class="like-btn" onclick="toggleLike(this)">♡ <span>Suka</span></button>
+        </div>
+    </div>
+
+    <div class="a-card reveal">
+        <div class="c-head">
+            <div class="c-htitle">
+                <h3>Perjuangan Timnas Indonesia di Kualifikasi Piala Dunia 2026</h3>
+                <div class="c-meta">
+                    <span class="tag t-sport">⚽ SEPAK BOLA</span>
+                    <span class="tag t-read">4 min read</span>
+                </div>
+            </div>
+        </div>
+        <div class="c-body">
+            <p>Tahun 2026 merupakan momen yang sangat bersejarah bagi sepak bola tanah air. Semangat <strong>Garuda Di Dadaku</strong> terasa semakin kuat seiring dengan perjuangan Timnas Indonesia dalam kualifikasi Piala Dunia 2026. Dukungan dari jutaan rakyat Indonesia menjadi energi tambahan bagi para pemain di lapangan.</p>
+            <p>Sebagai pendukung setia, saya merasa bangga melihat perkembangan taktik dan mental juara yang ditunjukkan oleh skuad Garuda. Dengan kerja keras dan manajemen yang baik, Indonesia mampu bersaing di level internasional. Mari terus berikan doa dan dukungan terbaik agar Merah Putih terus berkibar tinggi!</p>
+        </div>
+        <div class="c-foot">
+            <a href="https://www.pssi.org/" target="_blank" class="lnk">⚽ PSSI Resmi ↗</a>
+            <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026" target="_blank" class="lnk-o">🏆 FIFA 2026</a>
+            <button class="like-btn" onclick="toggleLike(this)">♡ <span>Suka</span></button>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <div class="f-logo">✦ Kristian Blog</div>
+    <div class="f-copy">© 2026 Kristian Aji Suseno</div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

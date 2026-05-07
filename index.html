@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home — Kristian Blog</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-layer"></div>
+<div class="blob b1"></div>
+<div class="blob b2"></div>
+<div class="blob b3"></div>
+<canvas id="c"></canvas>
+
+<nav id="nav">
+    <a href="index.html" class="n-logo"><div class="dot"></div>Kristian Blog</a>
+    <ul class="n-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <div class="hero-eyebrow"><span class="ping"></span>Selamat Datang</div>
+
+    <div class="av-wrap">
+        <div class="av-glow"></div>
+        <div class="av-orbit"></div>
+        <img src="image/image1.jpeg" alt="Kristian" class="av-img"
+             onerror="this.style.background='linear-gradient(135deg,#2c3e50,#0d1821)';this.removeAttribute('src')">
+    </div>
+
+    <h1>Halo, Saya<br><em>Kristian</em></h1>
+
+    <p class="hero-sub">
+        Mahasiswa Informatika Semester 4 yang gemar mengeksplorasi dunia teknologi, game, dan badminton.
+    </p>
+
+    <div class="hero-loc">📍 Surabaya → Tomohon</div>
+
+    <div class="hero-ctas">
+        <a href="blog.html" class="btn-p">Baca Blog →</a>
+        <a href="contact.html" class="btn-g">Hubungi Saya</a>
+    </div>
+
+</section>
+
+<div class="section">
+    <div class="s-eyebrow">Tentang Saya</div>
+    <h2 class="s-title">Siapa <em>Kristian?</em></h2>
+
+    <div class="glass reveal">
+        <p>
+            Halo! Saya <strong>Kristian Aji Suseno</strong>, lahir di Surabaya pada 4 November 2006 dan kini berdomisili di Tomohon.
+            Sebagai mahasiswa Informatika semester 4, saya aktif mengeksplorasi dunia teknologi, mengikuti tren AI terbaru,
+            dan menikmati hidup melalui game serta olahraga badminton.
+        </p>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="sc-icon">🎵</span>
+                <div class="sc-label">Musik & Film</div>
+                <div class="sc-val">Pop & Thriller</div>
+            </div>
+
+            <div class="stat-card">
+                <span class="sc-icon">🎨</span>
+                <div class="sc-label">Warna Favorit</div>
+                <div class="sc-val">Biru & Hitam</div>
+            </div>
+
+            <div class="stat-card">
+                <span class="sc-icon">🎮</span>
+                <div class="sc-label">Hobby</div>
+                <div class="sc-val">Game & Badminton</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="f-logo">✦ Kristian Blog</div>
+    <div class="f-copy">© 2026 Kristian Aji Suseno</div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
